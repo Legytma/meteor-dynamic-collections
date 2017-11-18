@@ -1,6 +1,6 @@
 Package.describe({
 	name: 'windol:meteor-dynamic-collections',
-	version: '0.0.1',
+	version: '0.0.2',
 	// Brief, one-line summary of the package.
 	summary: 'Meteor dynamic collections',
 	// URL to the Git repository containing the source code for this package.
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
 	api.use("tracker");
 	api.use("accounts-base");
 	//api.use("aldeed:schema-deny");
-	api.use("windol:meteor-audit-schema");
+	api.use("windol:meteor-audit-schema@0.0.1");
 	api.use(["meteor", "mongo", "underscore", "check"], "server");
 
 	api.export('DynamicCollections', 'server');
